@@ -4,7 +4,6 @@ A Power BI retail analytics case study covering **revenue, gross profit, margin,
 
 **Power BI · DAX · Power Query · Excel · Retail Analytics**
 
-> **Portfolio status:** Documentation in progress. The source PBIX and Excel workbook should be checked separately for availability in this repository. A validated model diagram is pending. Five screenshots have been added. The README intentionally avoids claiming that missing files are downloadable here.
 
 ## Project Overview
 
@@ -95,12 +94,6 @@ retail-sales-performance-dashboard/
     └── measures.md
 ```
 
-## Next Steps
-
-1. Capture full-size screenshots of all report pages and the data model.
-2. Validate measures, relationships, and refresh behavior in Power BI Desktop.
-3. Add the PBIX and only data permitted for redistribution.
-4. Replace this status note with validated report screenshots and model documentation.
 
 ## Author
 
