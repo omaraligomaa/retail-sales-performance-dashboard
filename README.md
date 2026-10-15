@@ -61,10 +61,9 @@ Examples of analytical measures used in the report include:
 - Gross Profit
 - Gross Margin
 - Planned Revenue
-- Revenue Achievement %
 - Cost
 - Quantity Sold
-- Demand %
+- Popularity %
 - New Revenue
 - New Net Profit
 - Increased Profit
