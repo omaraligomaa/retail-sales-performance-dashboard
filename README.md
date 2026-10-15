@@ -1,108 +1,96 @@
 # Retail Sales Performance Dashboard
 
-Power BI retail analytics project focused on **revenue performance, gross margin, product demand, year-over-year trends, achievement tracking, and pricing what-if analysis**.
+A Power BI retail analytics case study covering **revenue, gross profit, margin, demand, budget achievement, and pricing scenarios**.
 
 **Power BI · DAX · Power Query · Excel · Retail Analytics**
 
+> **Portfolio status:** Documentation in progress. The source PBIX and Excel workbook have been reviewed separately but are **not yet committed to this repository**. Screenshots and a validated model diagram are pending. The README intentionally avoids claiming that missing files are downloadable here.
+
 ## Project Overview
 
-The report analyzes retail sales performance across products, product lines, countries, and time. It combines executive KPIs with Top/Bottom analysis, margin analysis, demand trends, target achievement, and scenario modeling.
+An interactive retail report designed to explore performance across products, product lines, retailer countries, and reporting periods. The supplied Power BI file contains **9 report pages**.
 
-The report includes dedicated pages for:
+## Report Pages
 
-- **Summary**
-- **Top Revenue**
-- **Bottom Revenue**
-- **Achievement**
-- **Top Margin**
-- **Bottom Margin**
-- **Demand**
-- **What If**
-- **Tooltip Details**
+| Page | Analysis |
+| --- | --- |
+| Summary | Executive overview of retail KPIs and breakdowns |
+| Top Revenue | Highest-revenue products and comparisons |
+| Bottom Revenue | Lowest-revenue products and comparisons |
+| Achievement | Revenue achievement against planned revenue |
+| Top Margin | High-margin performance |
+| Bottom Margin | Low-margin performance |
+| Demand | Quantity and demand patterns |
+| What if | Pricing scenario exploration |
+| Tooltip Details | Supporting contextual detail |
+
+**Screenshots:** To be added from Power BI Desktop, following the visual presentation style used in the [Finance Performance Dashboard](https://github.com/omaraligomaa/finance-performance-dashboard).
 
 ## Business Questions
 
-The report is designed to answer questions such as:
-
-- Which products and product lines generate the strongest revenue?
-- Which products are growing or declining year over year?
-- Where are the highest and lowest gross margins?
+- Which products and product lines contribute most and least to revenue?
 - How does actual revenue compare with planned revenue?
-- Which countries contribute most to retail performance?
-- How is product demand changing over time?
-- How would a price increase affect revenue and profit?
+- How do gross profit and margins vary by product?
+- How does demand change across reporting periods?
+- How might a pricing adjustment affect the modeled outcome?
 
-## Key Metrics & DAX Logic
+## Source Dataset
 
-Measures and analytical fields used by the report include:
+The supplied Excel workbook contains **84,672 data rows** and **14 columns** in one worksheet.
 
-- Revenue
-- Revenue YoY %
-- Revenue %
-- Gross Profit
-- Gross Margin
-- Planned Revenue
-- Cost
-- Quantity Sold
-- Popularity %
-- New Revenue
-- Old Net Profit
-- New Net Profit
-- Increased Profit
-- Profit Increase %
-- KPI arrow / indicator measures
-- Price Increase what-if parameter
+| Field | Field | Field |
+| --- | --- | --- |
+| Year | Product line | Product type |
+| Product | Order method type | Retailer country |
+| Revenue | Planned revenue | Product cost |
+| Quantity | Unit cost | Unit price |
+| Gross profit | Unit sale price | |
 
-## Report Features
+The source dataset is not currently downloadable from this repository. Check dataset redistribution rights before publishing it.
 
-- Executive KPI cards
-- Revenue and gross-margin analysis
-- Top 5 / Bottom 5 product analysis
-- Year-over-year performance
-- Product and product-line analysis
-- Retailer country analysis
-- Revenue achievement vs. planned revenue
-- Demand and quantity analysis
-- What-if price increase scenario
-- Dynamic KPI indicators
-- Interactive slicers and page navigation
-- Tooltip detail page
+## Report & Model Verification
+
+The nine page names and the presence of visual elements were verified from the supplied PBIX package. A full model relationship audit, DAX logic validation, visual rendering check, and data-refresh test in Power BI Desktop are **still pending**.
+
+The report package includes custom visuals. Opening it in Power BI Desktop is recommended before distributing or modifying the PBIX.
+
+## Measures & Documentation
+
+See [Measure Inventory](docs/measures.md) and [Report Pages](docs/report-pages.md). These documents describe the report; their measure logic must be checked against the Power BI model before being presented as a complete verified DAX reference.
 
 ## Tools & Technologies
 
-- **Power BI Desktop**
-- **DAX**
-- **Power Query**
-- **Microsoft Excel**
-- **What-If Parameters**
-- **Retail KPI Analysis**
+- Power BI Desktop
+- DAX
+- Power Query
+- Excel
+- Retail performance analytics
 
-## Repository Structure
+## Repository Structure — Target
 
 ```text
 retail-sales-performance-dashboard/
 ├── README.md
 ├── dashboard/
-│   └── Retail Dashboard.pbix
+│   └── Retail Dashboard.pbix             # Pending upload
 ├── data/
-│   └── WA_Retail-SalesMarketing_-ProfitCost.xlsx
+│   └── WA_Retail-SalesMarketing_-ProfitCost.xlsx  # Pending rights review/upload
 ├── images/
-│   └── dashboard screenshots
+│   └── *.png                             # Pending screenshots
 └── docs/
     ├── report-pages.md
     └── measures.md
 ```
 
-## Files
+## Next Steps
 
-- `dashboard/Retail Dashboard.pbix` — Power BI report
-- `data/WA_Retail-SalesMarketing_-ProfitCost.xlsx` — source dataset
-- `docs/report-pages.md` — report-page overview
-- `docs/measures.md` — documented measure inventory
+1. Capture full-size screenshots of all report pages and the data model.
+2. Validate measures, relationships, and refresh behavior in Power BI Desktop.
+3. Add the PBIX and only data permitted for redistribution.
+4. Replace this status note with validated report screenshots and model documentation.
 
 ## Author
 
-**Omar Ali**  
-Data Engineering · Analytics Engineering
+**Omar Ali**
 
 [LinkedIn](https://www.linkedin.com/in/eng-omargomaa) · [GitHub](https://github.com/omaraligomaa)
