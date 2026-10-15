@@ -4,7 +4,7 @@ A Power BI retail analytics case study covering **revenue, gross profit, margin,
 
 **Power BI · DAX · Power Query · Excel · Retail Analytics**
 
-> **Portfolio status:** Documentation in progress. The source PBIX and Excel workbook have been reviewed separately but are **not yet committed to this repository**. Screenshots and a validated model diagram are pending. The README intentionally avoids claiming that missing files are downloadable here.
+> **Portfolio status:** Documentation in progress. The source PBIX and Excel workbook should be checked separately for availability in this repository. A validated model diagram is pending. Five screenshots have been added. The README intentionally avoids claiming that missing files are downloadable here.
 
 ## Project Overview
 
@@ -12,19 +12,32 @@ An interactive retail report designed to explore performance across products, pr
 
 ## Report Pages
 
-| Page | Analysis |
-| --- | --- |
-| Summary | Executive overview of retail KPIs and breakdowns |
-| Top Revenue | Highest-revenue products and comparisons |
-| Bottom Revenue | Lowest-revenue products and comparisons |
-| Achievement | Revenue achievement against planned revenue |
-| Top Margin | High-margin performance |
-| Bottom Margin | Low-margin performance |
-| Demand | Quantity and demand patterns |
-| What if | Pricing scenario exploration |
-| Tooltip Details | Supporting contextual detail |
+### Retail Summary
+Executive overview of revenue, cost, gross profit, gross margin, and product/geographic performance.
 
-**Screenshots:** To be added from Power BI Desktop, following the visual presentation style used in the [Finance Performance Dashboard](https://github.com/omaraligomaa/finance-performance-dashboard).
+![Retail Summary](images/retail-summary.png)
+
+### Achievement
+Actual versus planned revenue and achievement by product line, product, and country.
+
+![Achievement](images/achievement.png)
+
+### Top Margin
+Revenue and gross margin across product lines, product types, and products.
+
+![Top Margin](images/top-margin.png)
+
+### Demand
+Demand percentage and revenue across product lines and selected products.
+
+![Demand](images/demand.png)
+
+### What If Analysis
+Price increase scenario and modeled impact on revenue and profit.
+
+![What If Analysis](images/what-if-analysis.png)
+
+**Other report pages:** Top Revenue, Bottom Revenue, Bottom Margin, and Tooltip Details (screenshots not yet provided).
 
 ## Business Questions
 
