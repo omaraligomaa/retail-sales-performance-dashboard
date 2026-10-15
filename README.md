@@ -1,102 +1,127 @@
 # Retail Sales Performance Dashboard
 
-A Power BI retail analytics case study covering **revenue, gross profit, margin, demand, budget achievement, and pricing scenarios**.
+Power BI retail analytics project focused on **revenue performance, gross margin, product demand, revenue achievement, and pricing what-if analysis**.
 
 **Power BI · DAX · Power Query · Excel · Retail Analytics**
 
-
 ## Project Overview
 
-An interactive retail report designed to explore performance across products, product lines, retailer countries, and reporting periods. The supplied Power BI file contains **9 report pages**.
+The report transforms retail sales data into an interactive analytical dashboard for evaluating revenue, cost, gross profit, product performance, demand, and pricing scenarios across product lines and countries.
 
 ## Report Pages
 
 ### Retail Summary
-Executive overview of revenue, cost, gross profit, gross margin, and product/geographic performance.
+
+Executive overview of **Revenue, Cost, Gross Profit, and Gross Margin**, with geographic revenue distribution, product-line performance, and leading product types.
 
 ![Retail Summary](images/retail-summary.png)
 
 ### Achievement
-Actual versus planned revenue and achievement by product line, product, and country.
+
+**Actual Revenue vs. Planned Revenue** analysis, including overall revenue achievement, product-line comparisons, top-performing products, and country-level performance.
 
 ![Achievement](images/achievement.png)
 
 ### Top Margin
-Revenue and gross margin across product lines, product types, and products.
+
+Analysis of **Revenue and Gross Margin** across product lines, product types, and top-performing products.
 
 ![Top Margin](images/top-margin.png)
 
 ### Demand
-Demand percentage and revenue across product lines and selected products.
+
+Product demand analysis highlighting **Revenue and Demand %** across product lines, top products, and bottom products.
 
 ![Demand](images/demand.png)
 
 ### What If Analysis
-Price increase scenario and modeled impact on revenue and profit.
+
+Interactive pricing scenario analysis exploring how a **price increase** changes modeled revenue and profit across products and product lines.
 
 ![What If Analysis](images/what-if-analysis.png)
 
-**Other report pages:** Top Revenue, Bottom Revenue, Bottom Margin, and Tooltip Details (screenshots not yet provided).
-
 ## Business Questions
 
-- Which products and product lines contribute most and least to revenue?
+The report is designed to answer questions such as:
+
+- Which product lines and product types generate the highest revenue?
 - How does actual revenue compare with planned revenue?
-- How do gross profit and margins vary by product?
-- How does demand change across reporting periods?
-- How might a pricing adjustment affect the modeled outcome?
+- Which products and product lines deliver the strongest gross margins?
+- How does product demand differ across categories?
+- Which products contribute most and least to revenue?
+- How does a pricing scenario affect projected revenue and profit?
+- Which countries contribute most to retail performance?
 
-## Source Dataset
+## Key Measures
 
-The supplied Excel workbook contains **84,672 data rows** and **14 columns** in one worksheet.
+Examples of analytical measures used in the report include:
 
-| Field | Field | Field |
-| --- | --- | --- |
-| Year | Product line | Product type |
-| Product | Order method type | Retailer country |
-| Revenue | Planned revenue | Product cost |
-| Quantity | Unit cost | Unit price |
-| Gross profit | Unit sale price | |
+- Revenue
+- Revenue YoY %
+- Gross Profit
+- Gross Margin
+- Planned Revenue
+- Revenue Achievement %
+- Cost
+- Quantity Sold
+- Demand %
+- New Revenue
+- New Net Profit
+- Increased Profit
+- Profit Increase %
 
-The source dataset is not currently downloadable from this repository. Check dataset redistribution rights before publishing it.
+## Report Features
 
-## Report & Model Verification
-
-The nine page names and the presence of visual elements were verified from the supplied PBIX package. A full model relationship audit, DAX logic validation, visual rendering check, and data-refresh test in Power BI Desktop are **still pending**.
-
-The report package includes custom visuals. Opening it in Power BI Desktop is recommended before distributing or modifying the PBIX.
-
-## Measures & Documentation
-
-See [Measure Inventory](docs/measures.md) and [Report Pages](docs/report-pages.md). These documents describe the report; their measure logic must be checked against the Power BI model before being presented as a complete verified DAX reference.
+- Executive KPI cards
+- Revenue and gross margin analysis
+- Product and product-line performance
+- Top and bottom product comparisons
+- Actual vs. planned revenue analysis
+- Country-level performance
+- Demand analysis
+- Interactive price increase what-if scenario
+- Dynamic year filtering
+- Detailed report tooltips
 
 ## Tools & Technologies
 
-- Power BI Desktop
-- DAX
-- Power Query
-- Excel
-- Retail performance analytics
+- **Power BI Desktop**
+- **DAX**
+- **Power Query**
+- **Microsoft Excel**
+- **What-If Parameters**
+- **Retail KPI Analysis**
 
-## Repository Structure — Target
+## Repository Structure
 
 ```text
 retail-sales-performance-dashboard/
 ├── README.md
 ├── dashboard/
-│   └── Retail Dashboard.pbix             # Pending upload
+│   └── Retail Dashboard.pbix
 ├── data/
-│   └── WA_Retail-SalesMarketing_-ProfitCost.xlsx  # Pending rights review/upload
+│   └── WA_Retail-SalesMarketing_-ProfitCost.xlsx
 ├── images/
-│   └── *.png                             # Pending screenshots
+│   ├── retail-summary.png
+│   ├── achievement.png
+│   ├── top-margin.png
+│   ├── demand.png
+│   └── what-if-analysis.png
 └── docs/
     ├── report-pages.md
     └── measures.md
 ```
 
+## Files
+
+- `dashboard/Retail Dashboard.pbix` — Power BI report
+- `data/WA_Retail-SalesMarketing_-ProfitCost.xlsx` — retail source dataset
+- `docs/report-pages.md` — report page overview
+- `docs/measures.md` — measure inventory
 
 ## Author
 
-**Omar Ali**
+**Omar Ali**  
+Data Engineering · Analytics Engineering
 
 [LinkedIn](https://www.linkedin.com/in/eng-omargomaa) · [GitHub](https://github.com/omaraligomaa)
